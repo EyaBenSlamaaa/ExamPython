@@ -50,21 +50,25 @@ Frontend (Streamlit)
       requirements.txt → Toutes les dépendances
 
 ✅ Fonctionnalités Principales
+
 Backend
-Gère les films + acteurs (relation 1-N)
 
-Récupère un film au hasard avec ses acteurs
+    Gère les films + acteurs (relation 1-N)
 
-Génère un résumé grâce à Groq via Langchain
+    Récupère un film au hasard avec ses acteurs
+
+    Génère un résumé grâce à Groq via Langchain
 
 Frontend
-Affiche un film aléatoire
 
-Affiche les acteurs
+    Affiche un film aléatoire
 
-Bouton pour générer un résumé par LLM
+    Affiche les acteurs
+
+    Bouton pour générer un résumé par LLM
 
 ❓ Réponses aux Questions
+
 1. Pourquoi faut-il commit le film avant d’ajouter les acteurs ?
 → Pour que l’ID du film soit disponible et utilisable comme clé étrangère (movie_id) dans les enregistrements d’acteurs.
 
@@ -82,18 +86,16 @@ Ce qui donne une chaîne simple comme :
 "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page"
 
 🚀 Test Final
+
 Lancer le backend
 
-bash
-Copier le code
-uvicorn main_fastapi:app --reload
+     uvicorn main_fastapi:app --reload
+     
 → Ajouter les films via /docs (Swagger UI)
 
 Lancer le frontend
 
-bash
-Copier le code
-streamlit run main_streamlit.py
+         streamlit run main_streamlit.py
 Tester :
 
 Cliquer sur “Show Random Movie”
