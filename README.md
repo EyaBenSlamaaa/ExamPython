@@ -1,4 +1,5 @@
 🎬 Movie & Actor Explorer - Compte Rendu Simple
+
 🧠 Objectif
 Créer une application en deux parties :
 
@@ -9,42 +10,44 @@ Frontend (Streamlit)
 → Afficher un film aléatoire avec ses acteurs, et demander un résumé généré automatiquement.
 
 ⚙️ Technos Utilisées
-FastAPI (backend)
 
-SQLAlchemy (modèles & relations Movies ↔ Actors)
+          FastAPI (backend)
 
-PostgreSQL (base de données)
+         SQLAlchemy (modèles & relations Movies ↔ Actors)
 
-Pydantic (modèles de données)
+         PostgreSQL (base de données)
 
-Langchain + Groq (LLM)
+        Pydantic (modèles de données)
 
-Streamlit (frontend)
+        Langchain + Groq (LLM)
 
-requests, dotenv (intégration & config)
+        Streamlit (frontend)
+
+       requests, dotenv (intégration & config)
 
 🗂️ Structure du Projet
-database.py → Connexion à PostgreSQL
 
-models.py → Modèles SQLAlchemy : Movies, Actors avec relation
+     database.py → Connexion à PostgreSQL
 
-main_fastapi.py → API backend avec endpoints :
+     models.py → Modèles SQLAlchemy : Movies, Actors avec relation
 
-POST /movies/ → Ajouter un film et ses acteurs
+     main_fastapi.py → API backend avec endpoints :
 
-GET /movies/random/ → Récupérer un film aléatoire avec ses acteurs
+    POST /movies/ → Ajouter un film et ses acteurs
 
-POST /generate_summary/ → Générer un résumé avec LLM
+    GET /movies/random/ → Récupérer un film aléatoire avec ses acteurs
 
-main_streamlit.py → Interface utilisateur avec deux boutons :
+    POST /generate_summary/ → Générer un résumé avec LLM
 
-“🎲 Show Random Movie”
+    main_streamlit.py → Interface utilisateur avec deux boutons :
 
-“🧠 Get Summary”
+    “🎲 Show Random Movie”
 
-.env → Clé API Groq
+     “🧠 Get Summary”
 
-requirements.txt → Toutes les dépendances
+     .env → Clé API Groq
+
+      requirements.txt → Toutes les dépendances
 
 ✅ Fonctionnalités Principales
 Backend
