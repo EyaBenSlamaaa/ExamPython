@@ -102,3 +102,8 @@ Cliquer sur “Show Random Movie”
 
 Puis “Get Summary”
 
+
+
+
+
+![image](https://github.com/user-attachments/assets/a1ec3bfc-48d0-4cc4-9185-1f8ad0be843b)
